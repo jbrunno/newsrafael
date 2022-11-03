@@ -1,17 +1,13 @@
 module.exports = {
-  flags: {
-    DEV_SSR: false
-  },
   plugins: [
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {}
     },
     {
+      // ATTENTION: Match the theme name with the theme you're using
       resolve: '@elegantstack/gatsby-theme-flexiblog-agency',
       options: {
-        // Add theme options here. Check documentation for available options.
-        siteUrl: process.env.URL || process.env.VERCEL_URL,
         sources: {
           local: true
         }
