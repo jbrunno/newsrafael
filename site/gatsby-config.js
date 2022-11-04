@@ -60,18 +60,18 @@ module.exports = {
     //Footer Menu Items (2 Sets)
     footerMenu: [
       {
-        title: 'Quick Links',
+        title: 'Links rápidos',
         items: [
           {
-            name: 'Advertise with us',
+            name: 'Anuncie conosco',
             slug: '/contact'
           },
           {
-            name: 'About Us',
+            name: 'Quem Somos',
             slug: '/about'
           },
           {
-            name: 'Contact Us',
+            name: 'Fale conosco',
             slug: '/contact'
           }
         ]

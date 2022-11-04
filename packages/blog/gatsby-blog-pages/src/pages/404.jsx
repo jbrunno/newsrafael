@@ -15,13 +15,13 @@ const Page404 = props => (
       <Main>
         <Section>
           <PageTitle
-            header="Sorry, this page isn't available."
-            subheader='You may have mistyped the address or the page may have moved.'
+            header="Desculpe, esta página não está disponível."
+            subheader='Você pode ter digitado o endereço ou a página pode ter se movido.'
           />
         </Section>
         <Section>
           <Button variant='primary' as={Link} to='/'>
-            Go to homepage
+          Vá para a página inicial
           </Button>
         </Section>
       </Main>
