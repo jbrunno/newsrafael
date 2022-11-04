@@ -46,7 +46,15 @@ const Posts = ({
           />
         </Main>
         <Sidebar sx={{ pl: `3`, flexBasis: `1/4` }}>
-          <BannerVertical />
+          <CardList
+            nodes={recentPosts.nodes}
+            limit={4}
+            variant='horizontal-aside'
+            title='Recently Published'
+            omitMedia
+            omitCategory
+            aside
+          />
         </Sidebar>
       </Stack>
       <Divider space={5} />
@@ -157,15 +165,7 @@ const Posts = ({
               <>
                 <Divider />
                 <Stack effectProps={{ effect: false }}>
-                <CardList
-            nodes={recentPosts.nodes}
-            limit={4}
-            variant='horizontal-aside'
-            title='Recently Published'
-            omitMedia
-            omitCategory
-            aside
-          />
+                  <BannerHorizontal />
                 </Stack>
               </>
             )}
