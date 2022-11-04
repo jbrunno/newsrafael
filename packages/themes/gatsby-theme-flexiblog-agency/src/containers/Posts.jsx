@@ -157,7 +157,15 @@ const Posts = ({
               <>
                 <Divider />
                 <Stack effectProps={{ effect: false }}>
-                  <BannerHorizontal />
+                <CardList
+            nodes={recentPosts.nodes}
+            limit={4}
+            variant='horizontal-aside'
+            title='Recently Published'
+            omitMedia
+            omitCategory
+            aside
+          />
                 </Stack>
               </>
             )}
