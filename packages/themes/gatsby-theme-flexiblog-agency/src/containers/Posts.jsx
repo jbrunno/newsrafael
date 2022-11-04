@@ -6,7 +6,6 @@ import Seo from '@widgets/Seo'
 import Categories from '@widgets/Categories'
 import NewsletterExpanded from '@widgets/NewsletterExpanded'
 import BannerHorizontal from '@widgets/BannerHorizontal'
-import BannerVertical from '@widgets/BannerVertical'
 import { useBlogCategories } from '@helpers-blog'
 
 const Posts = ({
@@ -48,9 +47,9 @@ const Posts = ({
         <Sidebar sx={{ pl: `3`, flexBasis: `1/4` }}>
           <CardList
             nodes={recentPosts.nodes}
-            limit={4}
+            limit={5}
             variant='horizontal-aside'
-            title='Recently Published'
+            title='CURTINHAS'
             omitMedia
             omitCategory
             aside
